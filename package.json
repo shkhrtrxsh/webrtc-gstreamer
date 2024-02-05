@@ -1,0 +1,39 @@
+{
+  "name": "medooze-streamer-demo",
+  "version": "1.0.0",
+  "description": "Medooze Media Server Streamer Demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "canary": "open -a 'Google Chrome Canary.app' --args --use-fake-device-for-media-stream 'http://127.0.0.1:3000'",
+    "chromium": "chromium-browser --use-fake-device-for-media-stream 'http://127.0.0.1:3000'"
+  },
+  "keywords": [
+    "medooze",
+    "node",
+    "webrtc",
+    "sfu",
+    "rtp",
+    "gstreamer",
+    "recorder",
+    "h264",
+    "mp4"
+  ],
+  "author": "Alex Bakoushin <alex@bakoush.in>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bakoushin/medooze-streamer-demo.git"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "internal-ip": "6.2.0",
+    "medooze-media-server": "0.112.4",
+    "semantic-sdp": "3.22.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
